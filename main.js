@@ -15,3 +15,26 @@ console.log(secondBurger.name); // ?
 
 // 2-Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
 // 2-(1)
+
+//Code Question 2
+
+const hamburger = {
+  name: "Cheese Burger",
+  weight: 250,
+  ingredients: ["Cheese", "Meat", "Bread", "Tomato"]
+};
+
+const secondBurger = { ...hamburger };
+secondBurger.ingredients[0] = "Salad";
+
+console.log(hamburger.ingredients[0]); // ?
+console.log(secondBurger.ingredients[0]); // ?
+
+//P.S.: Ricordati che gli Array, come gli oggetti, sono dei Reference Type (Tipi di Riferimento)!
+
+//domande:
+
+// 1-Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
+// 1-(Salad)
+// 2-Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+// 2-(2)
