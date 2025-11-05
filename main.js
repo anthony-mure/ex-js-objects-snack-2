@@ -61,4 +61,31 @@ const thirdBurger = structuredClone(hamburger);
 //domande:
 
 // 1-Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
-// 1(9)
+// 1-(9)
+
+//Code Question 4
+
+const chef = {
+  name: "Chef Hyur",
+  age: 29,
+  makeBurger: (num = 1) => {
+    console.log(`Ecco ${num} hamburger per te!`);
+  },
+}
+
+const restaurant = {
+  name: "Hyur's Burgers",
+  address: {
+    street: 'Main Street',
+    number: 123,
+  },
+  openingDate: new Date(2025, 3, 11),
+  isOpen: false,
+};
+
+//domande:
+
+// 1-Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+// 1-(Il metodo migliore è lo spread operator perchè mi permette di copiare anche la funzione che contiene)
+// 2-Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
+// 2-(Il metodo migliore è lo structuredclone() perchè mi permette di copiare anche l'oggetto data contenuto al suo interno nel modo corretto)
